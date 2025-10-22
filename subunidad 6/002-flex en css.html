@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Garcia Paricio</title>
+    <style>
+        /*
+        TTF = True Type Font = Fuentes antiguas
+        OTF = Open type font = Fuentes nuevas y abiertas
+        Woff = En desuso
+        */
+        @font-face {
+            font-family: "mifuente";
+            src: url("Tokyo.ttf");
+        }
+        h1,h2,h3,h4{
+            color: black;
+        }
+        body{
+            background: silver;
+        }
+        header,main,footer{
+            background-color: whitesmoke;
+            width: 600px;  /* Esto indica la anchura del contenedor */
+            margin: auto;  /* Esto indica los margenes del contenedor (en este caso centrar) */
+            padding: 20px; /* Margenes interiores */
+        }
+        #inicio img{
+            width: 100%;
+        }
+        body{
+            font-family: sans-serif; /* serif, sans-serif, fantasy, cursive */
+        }
+        header{
+            text-align: center; /*Alineacion centrada */
+        }
+        header nav ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        header nav ul li a{
+            padding: 5px;               /* Le añade margen */
+            color: inherit;             /* Le cambia el color */
+            text-decoration: none;      /* Le quita el subrayado */
+        }
+        .contenido{
+            display: flex;
+        }
+        .contenido img{
+            flex: 1;
+            width: 50px;
+            height: 50px;
+        }
+        .contenido{
+            flex: 8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Esto será la cabecera de la página-->
+         <h1>Sergio Garcia Paricio</h1>
+         <h2>Estudiante de 1º de ASIR</h2>
+         <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#historialacademico">Historial academico</a></li>
+                <li><a href="#desarrollo">Desarrollo</a></li>
+                <li><a href="#idiomas">Idiomas</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <!-- Esto será la sección principal-->
+         <section id="inicio">
+            <h3>Inicio</h3>
+            <img src="sergio.png" alt="Sergio Garcia Paricio">
+         </section>
+         <section id="sobremi">
+            <h3>Sobre mi</h3>
+            <p>Apasionado de la informática, con ganas de aprender, buena comunicación y autodidacta con buena habilidad para la resolución de problemas.</p>
+         </section>
+         <section id="historialacademico">
+            <h3>Historial academico</h3>
+            <div class="contenido">
+                <img src="ceac.png">
+                <p>Soy <b>alumno</b> de 1º de <u>ASIR</u> en la <i>CEAC FP</i> en Valencia, curse bachillerato cientifico en el instituto IES Eduerdo Merello en el Puerto de Sagunto. Estudie tambien Ingenieria Telematica e Ingenieria Informatica pero no las acabé.</p>
+            </div>
+         </section>
+         <section id="desarrollo">
+            <h3>Desarrollo</h3>
+            <p>Estudiante autodidacta con ganas de aprender, experiencia personal en el campo de la Informatica por proyectos personales, montar, reparar y mantener ordenadores, instalar una red LAN en mi casa y desarollo de pequeños programas de prueba</p>
+         </section>
+         <section id="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+                <li>Español Nativo</li>
+                <li>Ingles C2</li>
+                <li>Valenciano B2</li>
+            </ul>
+         </section>
+         <section id="habilidades">
+            <h3>Habilidades</h3>
+            <div id="rejilla">
+                <article>
+                    <h4>Office suite</h4>
+                    <p>Experiencia con el uso de la suite de Office de Microsoft.</p>
+                    <img src="" alt="">
+                </article>
+                <article>
+                    <h4>Programas CAD</h4>
+                    <p>Experiencia con el uso de programas de CAD como AutoCAD.</p>
+                    <img src="" alt="">
+                </article>
+                <article>
+                    <h4>Programación</h4>
+                    <p>Conocimientos sobre programación en Java, C++, VHDL, CSS y HTML.</p>
+                    <img src="" alt="">
+                </article>
+                <article>
+                    <h4>Mantenimiento y montado de ordenadores</h4>
+                    <p>Experiencia montando, reparando y manteniendo ordenadores personales y familiares.</p>
+                    <img src="" alt="">
+                </article>
+            </div>
+         </section>
+         <hr>
+         <section id="contacto">
+            <h3>Contacto</h3>
+            <form>
+                <label for="nombre">Introduce tu nombre</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+                <br>
+                <label for="email">Introduce tu email</label><br>
+                <input type="text" name="email" id="email"><br>
+                <br>
+                <label for="mensaje">Introduce tu mensaje</label><br>
+                <textarea name="mensaje" id="mensaje"></textarea><br>
+                <br>
+                <input type="submit"><br>
+                <br>
+            </form>
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dNne16KB8jU?si=_zGp4Pddy4axjByn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </section>
+    </main>
+    <footer>
+        <!-- Esto será el pié de la página-->
+    </footer>
+</body>
+</html>
