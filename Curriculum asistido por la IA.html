@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Sergio García Paricio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Roboto, sans-serif;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .cv-container {
+            width: 900px;
+            background: #fff;
+            display: flex;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Lado izquierdo */
+        .left-column {
+            background: #2f3542;
+            color: white;
+            width: 30%;
+            padding: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .profile-pic {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .about {
+            font-size: 1em;
+            color: white;
+            line-height: 1.6em;
+            text-align: justify;
+        }
+
+        h3 {
+            border-bottom: 2px solid #70a1ff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+            line-height: 1.6em;
+            font-size: 0.95em;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        /* Lado derecho */
+        .right-column {
+            background: #f5f6fa;
+            flex: 1;
+            padding: 40px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            color: #2f3542;
+        }
+
+        .header h2 {
+            color: #57606f;
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item h4 {
+            color: #2f3542;
+            font-size: 1em;
+        }
+
+        .item h5 {
+            color: #57606f;
+            font-weight: normal;
+            font-size: 0.95em;
+        }
+
+        .item p {
+            font-size: 0.9em;
+            color: #444;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <aside class="left-column">
+            <img src="ceac.png" alt="Foto Sergio García Paricio" class="profile-pic">
+
+            <div class="about">
+                <h3>Sobre mi</h3>
+                <p>Apasionado de la informática, con ganas de aprender, buena comunicación y autodidacta, con gran habilidad para la resolución de problemas.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contacto</h3>
+                <p><strong>Teléfono:</strong> 611 484 913</p>
+                <p><strong>Email:</strong> sergiogp003@gmail.com</p>
+                <p><strong>Ubicación:</strong> Puerto de Sagunto (46520)</p>
+            </div>
+            <div class="additional-info">
+                <h3>Información adicional</h3>
+                <p><strong>Carné de conducir:</strong> Sí</p>
+                <p><strong>Vehículo propio:</strong> Sí</p>
+                <p><strong>Disponibilidad:</strong> Total</p>
+            </div>
+        </aside>
+
+        <main class="right-column">
+            <div class="header">
+                <h1>Sergio García Paricio</h1>
+                <h2>Técnico de sistemas</h2>
+            </div>
+
+            <div class="section">
+                <h3>Datos académicos</h3>
+                <div class="item">
+                    <h4>CEAC FP</h4>
+                    <h5>Cursando 1er curso de Administración de Sistemas Informáticos en Red</h5>
+                </div>
+                <div class="item">
+                    <h4>IES Eduardo Merello</h4>
+                    <h5>Bachillerato Científico – 2021</h5>
+                </div>
+            </div>
+            <div class="languages">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Español – Nativo</li>
+                    <li>Inglés – Nivel C2</li>
+                    <li>Valenciano – Nivel B2</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Certificaciones</h3>
+                <ul class="cert-list">
+                    <li>Cisco CCNA: Introduction to Networks – 70 horas</li>
+                    <li>Universidad de Valencia: Introducción a la participación en Proyectos Europeos – 35 horas</li>
+                    <li>Universidad de Valencia: El éxito de emprender – 20 horas</li>
+                    <li>Universidad de Valencia: Estrategias para la inserción laboral – 10 horas</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Conocimientos</h3>
+                <ul>
+                    <li>Programación en C++ y Java</li>
+                    <li>Uso avanzado de Linux y Windows</li>
+                    <li>Programas CAD</li>
+                    <li>Paquete Office</li>
+                    <li>Mantenimiento y montaje de equipos</li>
+                    <li>Herramientas digitales</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
