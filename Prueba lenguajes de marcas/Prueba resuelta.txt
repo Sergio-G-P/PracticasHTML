@@ -1,3 +1,87 @@
+Introducción
+Para esta actividad he modelado mi curriculum utilizando HTML y CSS utilizando como plantilla una seleccionada por mí del grupo proporcionado por el profesor.
+He utilizado programación en HTML para la estructura y CSS interno para el estilo para aproximarme lo más posible a la plantilla proporcionada. 
+
+Ahora el desarrollo preciso.
+Primero inicialice el documento e hice la head añadiendo las etiquetas meta esenciales tanto como el título de la página.
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum prueba Sergio Garcia Paricio</title>
+</head>
+<body>
+</body>
+</html>
+```
+
+Lo siguiente que hice fue cambiar el estilo de html y del body para crear una página y eliminar los márgenes por defecto.
+
+```
+	*{padding: 0px;margin: 0px;} /* Elimino los márgenes por defecto*/
+        html{
+            background-color: silver;
+            font-family: sans-serif;
+        }
+        body{
+            background: whitesmoke;
+            width: 600px;
+            margin: auto;
+            min-height: 400px;
+            display: flex;
+        }
+        /*Modificamos las características generales del cuerpo en general, color de fondo, anchura, márgenes y padding*/
+```
+
+A continuación dividí la página en 3, una división para el apartado de la izquierda y dos para el de la derecha, añadí las bases para su estilo, como color de fondo, márgenes, tamaño de fuente y color de fuente.
+
+``` 
+ 	#izquierda{
+            background: slategray;
+            flex: 1;
+            padding: 20px; 
+            font-size: 11px;
+            color: white;
+        }
+        /*Con el flex se divide la pagina en 3 secciones, 1 para la izquierda(flex 1) y 2 para la derecha(flex 2), 
+        modificamos las características generales del texto y la distribución de esta sección*/
+        #derecha{
+            background: whitesmoke;
+            flex: 2;
+            padding: 20px;
+            font-size: 12px;/*tamaño de las letras*/
+        }
+        /*Con el flex se divide la pagina en 3 secciones, 1 para la izquierda(flex 1) y 2 para la derecha(flex 2), 
+        modificamos las características generales del texto y la distribución de esta sección*/
+```
+
+Lo siguiente fue comenzar a rellenar con información, comencé añadiendo una imagen con la etiqueta `<img>` y añadiendo dos `<article>` con listas `<ul>` dentro las que modifiqué con css para eliminar los puntos y los márgenes.
+
+```
+	#izquierda article ul{
+            list-style-type: none;
+            margin: 0px;
+        }/*quito los puntos de las listas y el margen*/
+```
+
+Después comencé con el apartado derecha, con el nombre al que cambie el color con css `#nombre{color: slategray;}` y añadí una barra de separación horizontal `<hr>` a la que modifique con css para que pareciera a la plantilla `#nombre hr{height: 5px; background: black;}`.
+
+Por último rellene el resto de la derecha utilizando ´<div>´ para dividir las secciones y utilizando `<h3>` como cabeceras de esas subdivisiones y párrafos `<p>` o listas `<ul>` para rellenar la información de esas subdivisiones a las que quite los puntos y márgenes.
+
+```
+ 	#derecha div ul{
+            list-style-type: none;
+            margin: 0px;
+        }/*quito los puntos de las listas y el margen*/
+```
+
+Aplicación practica
+A continuación, mostrare el código de HTML con CSS interno que he realizado para mi CV
+
+```
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,7 +101,7 @@
             min-height: 400px;
             display: flex;
         }
-        /*Modificamos las caracteristicas generales del cuerpo en general, color de fondo, anchura, margenes y padding*/
+        /*Modificamos las características generales del cuerpo en general, color de fondo, anchura, márgenes y padding*/
         #izquierda{
             background: slategray;
             flex: 1;
@@ -25,8 +109,8 @@
             font-size: 11px;
             color: white;
         }
-        /*Con el flex se divide la pagina en 3 secciones, 1 para la izquierda(flex 1) y 2 para la derecha(flex 2), 
-        modificamos las caracteristicas generales del texto y la distribucion de esta seccion*/
+        /*Con el flex se divide la página en 3 secciones, 1 para la izquierda(flex 1) y 2 para la derecha(flex 2), 
+        modificamos las características generales del texto y la distribución de esta seccion*/
         #derecha{
             background: whitesmoke;
             flex: 2;
@@ -34,10 +118,10 @@
             font-size: 12px;/*tamaño de las letras*/
         }
         /*Con el flex se divide la pagina en 3 secciones, 1 para la izquierda(flex 1) y 2 para la derecha(flex 2), 
-        modificamos las caracteristicas generales del texto y la distribucion de esta seccion*/
+        modificamos las características generales del texto y la distribución de esta seccion*/
         #izquierda img{
             width: 100%;
-        }/*cambia el ancho de la imagen para que se adapte al tamaño de la seccion donde esta*/
+        }/*cambia el ancho de la imagen para que se adapte al tamaño de la sección donde esta*/
         section, section>div{
             display: flex; 
             flex-direction: column; 
@@ -57,7 +141,7 @@
         #nombre hr{
             height: 5px;
             background: black;
-        }/*modifico la barra horizontal debajo del nombre para que sea mas alta para separar el nombre del resto como en el curriculum de referencia*/
+        }/*modifico la barra horizontal debajo del nombre para que sea más alta para separar el nombre del resto como en el curriculum de referencia*/
         #derecha div ul{
             list-style-type: none;
             margin: 0px;
@@ -142,3 +226,8 @@
     </section>
 </body>
 </html>
+```
+
+Como conclusión esta práctica ha sido buena para ayudarme a recordar lo básico de HTML y aprender sobre CSS y expandir mis conocimientos sobre HTML de forma sencilla ya que he visto cosas nuevas que puedo aplicar a futuros proyectos, también ahora tengo un CV en html que puedo adjuntar en caso de búsqueda de trabajo. 
+
+
